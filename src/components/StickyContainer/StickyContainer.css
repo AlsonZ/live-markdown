@@ -1,0 +1,9 @@
+.sc-container {
+  background-color: darkred;
+  box-sizing: border-box;
+  position: sticky;
+  top: 5vh;
+  /* -2px for the border */
+  height: calc(90vh);
+  width: 100%;
+}
