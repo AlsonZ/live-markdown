@@ -24,6 +24,10 @@
   margin: 0 4px;
   border-radius: 2px;
   box-sizing: border-box;
-  cursor: ew-resize;
+  cursor: col-resize;
   background-color: rgb(71, 103, 4);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
