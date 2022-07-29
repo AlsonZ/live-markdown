@@ -11,7 +11,7 @@
   background-color: #282c34;
   display: grid;
   grid-template-columns: 1fr 28px 1fr;
-  padding: 5vh;
+  padding: 5vh 5vw;
   z-index: 2;
 }
 

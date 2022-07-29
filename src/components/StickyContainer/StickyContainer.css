@@ -6,4 +6,5 @@
   /* -2px for the border */
   height: calc(90vh);
   width: 100%;
+  overflow: auto;
 }
