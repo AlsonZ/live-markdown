@@ -1,0 +1,15 @@
+.lm-dark-theme {
+  --primary-text: white;
+  --secondary-text: rgb(222, 222, 222);
+  --primary-background: rgb(30, 30, 30);
+  --secondary-background: rgb(60, 60, 60);
+  --primary-highlight: #034668;
+}
+
+.lm-light-theme {
+  --primary-text: black;
+  --secondary-text: rgb(40, 40, 40);
+  --primary-background: rgb(230, 230, 230);
+  --secondary-background: rgb(220, 220, 220);
+  --primary-highlight: #b2e5ff;
+}

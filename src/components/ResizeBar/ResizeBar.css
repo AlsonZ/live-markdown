@@ -1,0 +1,14 @@
+.lm-resize-bar {
+  background-color: var(--primary-highlight);
+  position: sticky;
+  top: 5vh;
+  height: calc(90vh);
+  width: calc(100% - 8px);
+  margin: 0 4px;
+  box-sizing: border-box;
+  cursor: col-resize;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

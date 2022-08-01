@@ -2,32 +2,15 @@
   position: relative;
   text-align: center;
   background-color: #282c34;
-  color: white;
+  color: var(--primary-text);
   min-height: 100vh;
   display: grid;
 }
 .live-markdown .lm-container {
   position: relative;
-  background-color: #282c34;
+  background-color: var(--secondary-background);
   display: grid;
   grid-template-columns: 1fr 28px 1fr;
   padding: 5vh 5vw;
   z-index: 2;
-}
-
-.lm-container .lm-resize-bar {
-  position: sticky;
-  height: calc(90vh);
-  width: calc(100% - 8px);
-  border: 1px solid var(--border);
-  top: 5vh;
-  margin: 0 4px;
-  border-radius: 2px;
-  box-sizing: border-box;
-  cursor: col-resize;
-  background-color: rgb(71, 103, 4);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }

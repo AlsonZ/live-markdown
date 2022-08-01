@@ -4,13 +4,13 @@ import { Card } from "rixun-ui";
 import { forwardRef } from "react";
 
 export const StickyContainer = forwardRef(
-  ({ children, className, onClick, width }, ref) => {
+  ({ children, className, onClick, lmTheme, width }, ref) => {
     return (
       <Card
         className={`sc-container ${className}`}
         onClick={onClick}
         style={{ width: width }}
-        type="border"
+        type={lmTheme === "light" ? "shadow" : "border"}
         extraProps={{ ref: ref }}
       >
         {children}
@@ -25,6 +25,7 @@ StickyContainer.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   onClick: PropTypes.func,
+  lmTheme: PropTypes.string,
   width: PropTypes.string,
 };
 

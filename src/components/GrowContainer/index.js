@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 import "./GrowContainer.css";
 import { forwardRef } from "react";
 
-const GrowContainer = forwardRef(({ children, width }, ref) => {
+const GrowContainer = forwardRef(({ children, lmTheme, width }, ref) => {
   return (
     <Card
-      type="border"
       style={{ width: width }}
       className="gc-container"
+      type={lmTheme === "light" ? "shadow" : "border"}
       extraProps={{ ref: ref }}
     >
       {children}
@@ -18,6 +18,7 @@ const GrowContainer = forwardRef(({ children, width }, ref) => {
 GrowContainer.displayName = "GrowContainer";
 GrowContainer.propTypes = {
   children: PropTypes.node,
+  lmTheme: PropTypes.string,
   width: PropTypes.string,
 };
 export default GrowContainer;
